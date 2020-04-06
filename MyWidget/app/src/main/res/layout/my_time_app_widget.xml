@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_mywidget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#09C"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/tv_HHmmss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:hint="@string/clock"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_ddMMyyyy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/day_month_year"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event:"
+            android:textSize="@dimen/size_text_16dp" />
+
+        <TextView
+            android:id="@+id/tv_date_select_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="dd/MM/yyyy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_text_16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Time remaining:"
+            android:textSize="@dimen/size_text_16dp" />
+
+        <TextView
+            android:id="@+id/tv_time_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="HH:ss"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/size_text_16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Notification : "
+            android:textSize="@dimen/size_text_16dp" />
+
+        <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="Notification"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/size_text_16dp" />
+    </LinearLayout>
+</LinearLayout>
